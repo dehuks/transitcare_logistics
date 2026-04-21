@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 115" width="560" height="115">
+  <!-- Custom "T" glyph: crossbar + stem -->
+  <rect x="0" y="14" width="68" height="14" fill="#ffffff"/>
+  <!-- Dark accent square (top-left of T) — slightly blue-tinted white -->
+  <rect x="0" y="14" width="21" height="21" fill="#bfdbfe"/>
+  <!-- T vertical stem -->
+  <rect x="23" y="14" width="22" height="52" fill="#ffffff"/>
+
+  <!-- "ransitcare" in white -->
+  <text
+    x="74"
+    y="66"
+    font-family="'Arial Black', 'Arial', 'Helvetica Neue', sans-serif"
+    font-weight="900"
+    font-size="62"
+    fill="#ffffff"
+    letter-spacing="-0.5"
+  >ransitcare</text>
+
+  <!-- "logistics" in light blue -->
+  <text
+    x="1"
+    y="106"
+    font-family="'Arial', 'Helvetica Neue', sans-serif"
+    font-weight="400"
+    font-size="24"
+    fill="#bfdbfe"
+    letter-spacing="11"
+  >logistics</text>
+</svg>
