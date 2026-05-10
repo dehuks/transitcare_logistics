@@ -10,12 +10,12 @@ export default function Logo({ light = false }) {
       <div className="flex items-baseline" style={{ marginBottom: '-2px' }}>
         {/* Custom T glyph */}
         <svg 
-          width="40" 
-          height="48" 
+          width="27" 
+          height="33" 
           viewBox="0 0 40 48" 
           fill="none" 
           xmlns="http://www.w3.org/2000/svg"
-          className="mr-1 transform translate-y-1"
+          className="mr-1 transform translate-y-[2px]"
         >
           {/* Horizontal crossbar (light blue) */}
           <rect x="0" y="0" width="40" height="8" fill={lightBlue} />
@@ -26,23 +26,22 @@ export default function Logo({ light = false }) {
         {/* Text next to T */}
         <span 
           className="font-sans font-bold tracking-tight" 
-          style={{ fontSize: '44px', color: lightBlue, lineHeight: '1', marginLeft: '-2px' }}
+          style={{ fontSize: '30px', lineHeight: '1', marginLeft: '-2px' }}
         >
-          rans
-        </span>
-
-        {/* Custom i with dark blue dot */}
-        <div className="flex flex-col items-center justify-end mx-[1px]" style={{ height: '32px' }}>
-          <div style={{ width: '6px', height: '6px', backgroundColor: darkBlue, marginBottom: '4px' }} />
-          <div style={{ width: '6px', height: '24px', backgroundColor: lightBlue }} />
-        </div>
-
-        {/* Rest of the text */}
-        <span 
-          className="font-sans font-bold tracking-tight" 
-          style={{ fontSize: '44px', color: lightBlue, lineHeight: '1' }}
-        >
-          tcare
+          <span style={{ color: lightBlue }}>rans</span>
+          {/* Custom i with dark blue dot and light blue stem using text gradient */}
+          <span 
+            style={{ 
+              backgroundImage: `linear-gradient(to bottom, ${darkBlue} 33%, ${lightBlue} 33%)`,
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              backgroundClip: 'text',
+              color: 'transparent'
+            }}
+          >
+            i
+          </span>
+          <span style={{ color: lightBlue }}>tcare</span>
         </span>
       </div>
 
@@ -50,10 +49,10 @@ export default function Logo({ light = false }) {
       <span
         className="font-sans uppercase tracking-[0.45em]"
         style={{
-          fontSize: '14px',
+          fontSize: '10px',
           color: greyColor,
-          marginTop: '6px',
-          marginLeft: '4px',
+          marginTop: '4px',
+          marginLeft: '3px',
           fontWeight: 400,
         }}
       >
